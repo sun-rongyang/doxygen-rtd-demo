@@ -1,0 +1,5 @@
+build_doc/
+test/
+build/
+
+*.swp

@@ -23,6 +23,7 @@ author = 'Rongyang Sun'
 
 
 # -- General configuration ---------------------------------------------------
+master_doc = 'index'
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -54,5 +55,6 @@ html_static_path = []
 html_extra_path = ['../../build_doc/html']
 
 
+# Build Doxygen doc
 import subprocess
 subprocess.call('cd ../.. ; doxygen docs/Doxyfile', shell=True)

@@ -20,4 +20,6 @@ public:
       int         ///< a int param
   );
 
+  float fmem;     ///< a float member
+
 };

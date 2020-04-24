@@ -1,32 +1,44 @@
-/** @file mycplx.h
+/*
 * Author: Rongyang Sun <sun-rongyang@outlook.com>
 * Creation Date: 2020-04-23 21:51
 * 
-* Description: My complex number. Main header file.
+* Description: MyCplx project. The main header file.
 */
 
-/** Specific namespace used by My complex number project.
+
+/** @file mycplx.h
+ *  The main header file of %MyCplx project.
+ *  This file contains all the declarations of public APIs.
+ */
+
+
+/** The namespace used by %MyCplx project.
  *
- *  The namespace of the project.
+ *  The namespace of the project. All the public APIs are declared and defined under this namespace.
  */
 namespace mycplx {
 
-/** A test class.
- *
- * This are the detail descriptions.
+
+/** My complex number.
+ *  The complex number defined by %MyCplx project.
  */
-class TestClass {
+class MyCplx {
 public:
-  /** The 1st public member.
-   *
-   * I am the 1st public function member.
+  /** Default constructor.
    */
-  void PubFst(
-      int         ///< a int param
-  );
+  MyCplx(void) : real(0.0), imag(0.0) {}
 
-  float fmem;     ///< a float member
+  /** Normal constructor.
+   *  Construct a complex using its real part and imaginary part.
+   */
+  MyCplx(
+      const double real_part,   ///< The real part.
+      const double imag_part    ///< The imaginary part.
+  ) : real(real_part), imag(imag_part) {}
 
+  double real;    ///< Real part of the complex number.
+  double imag;    ///< Imaginary part of the complex number.
 };
+
 
 } /* mycplx */ 

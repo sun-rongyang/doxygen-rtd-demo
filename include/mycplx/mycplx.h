@@ -1,10 +1,15 @@
-/*
+/** @file mycplx.h
 * Author: Rongyang Sun <sun-rongyang@outlook.com>
-* Creation Date: 2020-04-08 21:40
+* Creation Date: 2020-04-23 21:51
 * 
-* Description: File description
+* Description: My complex number. Main header file.
 */
 
+/** Specific namespace used by My complex number project.
+ *
+ *  The namespace of the project.
+ */
+namespace mycplx {
 
 /** A test class.
  *
@@ -23,3 +28,5 @@ public:
   float fmem;     ///< a float member
 
 };
+
+} /* mycplx */ 
